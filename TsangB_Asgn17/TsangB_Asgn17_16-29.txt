@@ -1,0 +1,112 @@
+Brandon Tsang
+April 11, 2018
+Assignment 17.16-29: Loops Worksheet parts 16-29
+ICS3U1-07 | Ms. Strelkovska
+
+16.
+do {
+    input = scanner.nextInt();
+} while (input > 0);
+
+17.
+do {
+    input = scanner.nextInt();
+} while (input % 2 != 0);
+
+18.
+while (true) {
+    input = scanner.nextInt();
+    if (input == SENTINEL) {
+        break;
+    } else {
+        System.out.println(input);
+    }
+}
+
+19.
+double product = scanner.nextDouble();
+while (true) {
+    input = scanner.nextDouble();
+    if (input != 0) {
+        product *= input;
+    } else {
+        break;
+    }
+}
+System.out.println(product);
+
+20.
+for (int i = 1; i <= 100; i++) {
+    if (i % 2 != 0) {
+        System.out.println(i);
+    }
+}
+
+21.
+for (int i = 300; i >= 1; i -= 5) {
+    System.out.println(i);
+}
+
+22.
+for (int i = LOW; i <= HIGH; i++) {
+    if (i % 4 == 0 && i % 5 != 0) {
+        System.out.println(i);
+    }
+}
+
+23.
+for (int i = 1; i <= number; i++) {
+    if (number % i == 0) {
+        System.out.println(i);
+    }
+}
+
+24.
+int highest = 0;
+int lowest  = 0;
+for (int i = 0; i < 10; i++) {
+    int input = scanner.nextInt();
+    highest = input > highest ? input : highest;
+    lowest = input < lowest ? input : lowest;
+}
+System.out.println(lowest);
+System.out.println(highest);
+
+25.
+int a = 0;
+for (String letter : string.split("")) {
+    if (letter.equals("a")) {
+        a++;
+    }
+}
+System.out.println(a);
+
+26.
+String[] string2 = string.split("");
+for (int i = string.length() - 1; i >= 0; i--) {
+    System.out.print(string2[i]);
+}
+System.out.println();
+
+27.
+String[] string2 = string.split("");
+for (int i = 0; i < string2.length; i += 2) {
+    System.out.println(string2[i]);
+}
+
+28.
+for (int i = 0; i < LINES; i++) {
+    for (int j = 0; j < i; j++) {
+        System.out.print(" ");
+    }
+    System.out.println("*");
+}
+
+29.
+String[] string2 = string.split("");
+for (int i = 0; i < string2.length; i++) {
+    for (int j = 0; j < i; j++) {
+        System.out.print(" ");
+    }
+    System.out.println(string2[i]);
+}
