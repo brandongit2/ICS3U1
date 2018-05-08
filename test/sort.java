@@ -7,9 +7,7 @@ public class sort {
 
     public static void main(String[] args) {
         // Get the console dimensions
-        for (int i = 0; i < 10000; i++) {
-            System.out.print("\u2588");
-        }
+        System.out.print("\u2588");
 
         for (int i = 0; i < arr.length; i++) {
             arr[i] = (int) (Math.random() * 501);
