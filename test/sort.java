@@ -21,8 +21,6 @@ public class sort {
         Panel panel = new Panel();
         BorderLayoutManager layoutManager = new BorderLayoutManager();
         List sortingAlgorithmList = new List();
-        sortingAlgorithmList.add(0, "Item #1");
-        sortingAlgorithmList.add(1, "Item #2");
         layoutManager.bindToContainer(panel);
         layoutManager.addWidget(sortingAlgorithmList, BorderLayoutManager.WEST, WidgetsConstants.ALIGNMENT_TOP, WidgetsConstants.ALIGNMENT_LEFT);
         window.setRootPanel(panel);
